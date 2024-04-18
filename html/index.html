@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CEP e Frete</title>
+</head>
+<body>
+    <section>
+        <div class="light-section">
+            <!---Title-->
+            <p class="title" id="dark-title">Seu CEP + fretes = <span id="light-green">facilidade</span>. <br> Bem-vindo!</p>
+
+            <!---Form-->
+            <form action="" id="cep-form">
+                <!--CEP group-->
+                <label for="cep">CEP</label>
+                <div class="field-searchBtn">
+                    <!--CEP field-->
+                    <input type="text" class="editable-input" id="cep" name="cep-field" placeholder="00000000">
+                    <!--Search Button-->
+                    <input type="button" class="search-button" id="cep-button" name="cep-button" value="Pesquisar">
+                </div>
+
+                <!--Logradouro group-->
+                <label for="logradouro">Logradouro</label>
+                <div class="field-searchBtn">
+                    <!--Logradouro field-->
+                    <input type="text" class="editable-input" id="logradouro" name="logradouro-field" placeholder="SP, São Paulo, Rua Alguma Coisa">
+                    <!--Search Button-->
+                    <input type="button" class="search-button" id="logradouro-button" name="logradouro-button" value="Pesquisar">
+                </div>
+
+                <!--Complemento field-->
+                <label for="complemento">Complemento</label>
+                <input type="text" class="no-editable-input" id="complemento" name="complemento-field" disabled>
+
+                <!--Bairro field-->
+                <label for="bairro">Bairro</label>
+                <input type="text" class="no-editable-input" id="bairro" name="bairro-field" disabled>
+
+                <!--Localidade & UF fields-->
+                <div class="locUF-fields">
+                    <!--Localidade field-->
+                    <div class="localidade">
+                        <label for="localidade">Localidade</label>
+                        <input type="text" class="no-editable-input" id="localidade" name="localidade-field" disabled>
+                    </div>
+                    
+                    <!--UF field-->
+                    <div class="uf">
+                        <label for="uf">UF</label>
+                        <input type="text" class="no-editable-input" id="uf" name="uf-field" disabled>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="dark-section">
+            <!---Title-->
+            <p class="title" id="light-title">Calcule o frete agora!</p>
+            <p id="light-subtitle">Forneça os dados do seu produto e saiba o preço e o prazo de entrega</p>
+
+            <!--Calc Button-->
+            <a href="frete.html" id="calc-button">Calcular -></a>
+        </div>
+    </section>
+</body>
+</html>
+
+<script src="../js/script.js"></script>

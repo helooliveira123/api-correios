@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/frete.css">
+    <title>CEP e Frete</title>
+</head>
+<body>
+    <section>
+        <div class="light-section">
+            <!--Header-->
+            <div class="header">            
+                <!---Exit Button-->
+                <a href="index.html"><</a>
+                <!---Title-->
+                <p class="title" id="dark-title">Calculadora de Fretes</p>
+            </div>
+
+            <!---Form-->
+            <form action="" id="frete-form">                
+                <!--Grid Group-->
+                <div class="grid">
+                    <!--CEP Origem field-->
+                    <div class="input-group">                    
+                        <label for="cep-origem">CEP Origem</label>
+                        <input type="text" class="input" id="cep-origem" name="cep-origem-field" placeholder="00000000" required>
+                    </div>
+    
+                    <!--CEP Destino field-->
+                    <div class="input-group">
+                        <label for="cep-destino">CEP Destino</label>
+                        <input type="text" class="input" id="cep-destino" name="cep-destino-field" placeholder="00000000" required>
+                    </div>
+
+                    <!--Peso field-->
+                    <div class="input-group">
+                        <label for="peso">Peso</label>
+                        <input type="text" class="input" id="peso" name="peso-field" required>
+                    </div>
+    
+                    <!--Comprimento field-->
+                    <div class="input-group">
+                        <label for="comprimento">Comprimento</label>
+                        <input type="text" class="input" id="comprimento" name="comprimento-field" required>
+                    </div>
+                
+                    <!--Altura field-->
+                    <div class="input-group">
+                        <label for="altura">Altura</label>
+                        <input type="text" class="input" id="altura" name="altura-field" required>
+                    </div>
+    
+                    <!--Largura field-->
+                    <div class="input-group">
+                        <label for="largura">Largura</label>
+                        <input type="text" class="input" id="largura" name="largura-field" required>
+                    </div>
+    
+                    <!--Diâmetro field-->
+                    <div class="input-group">
+                        <label for="diametro">Diâmetro</label>
+                        <input type="text" class="input" id="diametro" name="diametro-field" required>
+                    </div>
+
+                    <!--Formato field-->
+                    <div class="input-group">
+                        <label for="formato">Formato</label>
+                        <select id="formato" class="select" required>
+                            <option value="">Selecione</option>
+                            <option value="1">Caixa/Pacote</option>
+                            <option value="2">Rolo/Prisma</option>
+                            <option value="3">Envelope</option>
+                        </select>
+                    </div>
+
+                    <!--Serviço field-->
+                    <div class="input-group">
+                        <label for="servico">Serviço</label>
+                        <select id="servico" class="select" required>
+                            <option value="">Selecione</option>
+                            <option value="04014">SEDEX à vista</option>
+                            <option value="04065">SEDEX (à vista e pagamento na entrega)</option>
+                            <option value="04510">PAC à vista</option>
+                            <option value="04707">PAC (à vista e pagamento na entrega)</option>
+                            <option value="40169">SEDEX12 (à vista e a faturar)</option>
+                            <option value="40215">SEDEX 10 (à vista e a faturar)</option>
+                            <option value="40290">SEDEX Hoje Varejo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-button">
+                    <!--Calc Button-->
+                    <button id="calcButton" name="calc-btn" type="submit">Calcular -></button>
+                </div>
+            </form>
+        </div>
+        <div class="dark-section">
+            <!---Valor Title-->
+            <div class="valor-title">
+                <p class="titles">Valor:</p>
+                <p class="results" id="valorTotal">R$00,00</p>
+            </div>
+
+            <!--Prazo Title-->
+            <div class="prazo-title">
+                <p class="titles">Prazo de Entrega:</p>
+                <p class="results" id="prazoEntrega">0 dias</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script src="../js/frete.js"></script>

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-color: #B0B087;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 11% 10%;
+    display: flex;
+}
+
+section .title{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* LIGHT SECTION */
+section .light-section{
+    background-color: #5E934F;
+    width: 72%;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+/* Header */
+section .light-section .header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+section .light-section .header a{
+    background-color: #3B6F2E;
+    width: 7%;
+    padding: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #A2CC95;
+    text-decoration: none;
+}
+
+section .light-section .header #dark-title{
+    color: #3B6F2E;
+}
+
+/* Form */
+section .light-section #frete-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+section .light-section #frete-form .grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 32% 32% 32%;
+    gap: 3%;
+    place-content: center;
+}
+
+section .light-section #frete-form .grid label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3B6F2E;
+}
+
+section .light-section #frete-form .grid .input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+section .light-section #frete-form .grid .input{
+    color: #3B6F2E;
+}
+
+section .light-section #frete-form .grid .input, .select{
+    background-color: #A2CC95;
+    height: 100%;
+    width: 100%;
+    padding: 0.6em;
+    border: none;
+    border-radius: 3px;
+}
+
+section .light-section #frete-form .grid .input::placeholder, .select{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #81B670;
+}
+
+section .light-section #frete-form .grid .input:focus, .select:focus{
+    outline-color: #3B6F2E;
+}
+
+section .light-section #frete-form .grid .selec{
+    padding: 0.4em;
+}
+
+section .light-section #frete-form .grid .select option{
+    color: #3B6F2E;
+    border: 1px solid #3B6F2E;
+}
+
+section .calc-button{
+    display: flex;
+    justify-content: center;
+}
+
+section .calc-button #calcButton{
+    background-color: #2D5523;
+    padding: 0.7em;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #81B670;
+    cursor: pointer;
+}
+
+/* DARK SECTION */
+section .dark-section{
+    background-color: #3B6F2E;
+    width: 29%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+/* Titles */
+section .dark-section .titles{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #81B670;
+}
+
+section .dark-section .results{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #81B670;
+}
